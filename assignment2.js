@@ -16,6 +16,7 @@ app.post('/', (req, res) => {
   if (wordCount >= 8) {
     return res.status(200).send('200 OK');
   } else {
+    return res.status(403).send('Not Acceptable');
   }
 });
 
